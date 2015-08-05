@@ -11,7 +11,7 @@ class User < ActiveRecord::Base
     presence: true,
     uniqueness: true,
     format: {
-      with: /\A[_a-z0-9-]+(\.[_a-z0-9-]+)*@[a-z0-9-]+(\.[a-z0-9-]+)*(\.[a-z]{2,4})\z/,
+      with: /@/,
       message: "not a valid format"
     }
 
