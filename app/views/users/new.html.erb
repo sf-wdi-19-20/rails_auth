@@ -1,0 +1,8 @@
+<h1>Sign Up</h1>
+<hr>
+
+<%= form_for @user do |f| %>
+  <%= f.email_field :email, autofocus: true %>
+  <%= f.password_field :password %>
+  <%= f.submit "Sign Up" %>
+<% end %>
