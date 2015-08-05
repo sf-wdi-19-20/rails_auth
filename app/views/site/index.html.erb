@@ -1,6 +1,6 @@
-<h1>Welcome to our site!</h1>
+<h1>Welcome to the site!</h1>
+<hr>
 
-<p>
-  <%= link_to "Sign Up", new_user_path, class: "btn btn-primary" %>
-  <!-- <a href="/users/new" class="btn btn-primary">Sign Up</a> -->
-</p>
+<!-- <a href="/signup" class="btn btn-primary">Please Sign Up</a> -->
+<!-- refactored with rails helpers: -->
+<%= link_to "Please Sign Up", signup_path, class: "btn btn-primary" %>
