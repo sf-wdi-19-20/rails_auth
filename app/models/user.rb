@@ -5,7 +5,7 @@ class User < ActiveRecord::Base
   # for presence of password, password length < 72 characters,
   # and password_confirmation
 
-  validates :password, length: { minimum: 6 }
+  validates :password, length: { minimum: 6 }, on: :create
 
   validates :email,
     presence: true,
