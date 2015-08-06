@@ -1,7 +1,12 @@
 class SessionsController < ApplicationController
 
   def new
-    render :new
+    # redirect user if already logged in
+    if current_user
+      redirect_to profile_path
+    else
+      render :new
+    end
   end
 
   def create
